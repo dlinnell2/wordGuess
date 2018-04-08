@@ -19,4 +19,4 @@ Letter.prototype.userGuess = function(userGuess){
     }
 }
 
-module.exports = Letter
+module.exports = Letter;
