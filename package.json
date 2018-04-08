@@ -1,0 +1,23 @@
+{
+  "name": "wordGuess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlinnell2/wordGuess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlinnell2/wordGuess/issues"
+  },
+  "homepage": "https://github.com/dlinnell2/wordGuess#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0"
+  }
+}
