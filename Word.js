@@ -2,13 +2,11 @@ var Letter = require('./Letter.js');
 
 function Word (word) {
     this.word = word;
-    this.letters = [];
-    this.displayWord = [];
 };
 
 Word.prototype.buildArray = function(){
 
-    letters = [];
+    this.letters = [];
 
     for (var item of this.word) {
         var newLetter = new Letter(item);
@@ -21,18 +19,17 @@ Word.prototype.buildArray = function(){
 
 Word.prototype.buildDisplay = function(){
 
-    this.displayWord = [];
+    this.displayArr = [];
 
     for (var item of this.letters){
-        this.displayWord.push(item.display());
+        this.displayArr.push(item.display());
     }
 
-    return this.displayWord;
 };
 
-Word.prototype.checkGuess = function(guess){
+Word.prototype.isRight = function(guess){
     for (var item of this.letters){
-        item.userGuess(guess);
+        item.letterGuess(guess);
     }
 
     this.buildDisplay();
