@@ -94,7 +94,7 @@ function gameRun() {
 
         ]).then(function (answer) {
 
-            userGuess = answer.guess;
+            userGuess = answer.guess.toLowerCase();
 
             for (var item of checkWord.letters) {
     
